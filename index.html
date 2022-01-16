@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MyFullPage.js</title>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+	<nav class="nav">
+		<a href="#inicio" class="marca ">s o t a </a>
+		<ul id="menu" class="menu">
+			<li data-menuanchor="inicio" class="active">
+				<a href="#inicio">Inicio</a>
+			</li>
+			<li data-menuanchor="about">
+				<a href="#about">About</a>
+			</li>
+			<li data-menuanchor="productos">
+				<a href="#productos">Productos</a>
+			</li>
+			<li data-menuanchor="contacto">
+				<a href="#contacto">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- Las clases deben ir en ingles para que las librerias las puedan reconocer -->
+	<main id="fullpage">
+		<header class="section header">
+			<div class="contenedor-titulo">
+				<h1 class="titulo">
+					<span class="texto-crimson">Alpha</span>
+					<span class="texto-secondary">Didas</span>
+				</h1>
+				<p class="texto-thrid">Lace up and feel the <span class="texto-power">energy</span> </p>
+			</div>
+			<div class="contenedor-icono">
+				<p><a href="#about" class="texto-blanco"><i class="fas fa-chevron-down"></i></a></p>
+			</div>
+			<!-- VIDEO -->
+			<video loop muted data-autoplay class="bg-video">
+				<source src="media/bg-video.m4v" type="video/mp4">
+			</video>
+		</header>
+		<section class="section about">
+			<div class="contenedor-titulo">
+				<h1 class="titulo">
+					
+					<span class="texto-secondary">¿Quienes somos?</span>
+				</h1>
+				<p class="texto-thrid">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo officiis facilis accusamus sunt vitae fugit voluptates veritatis soluta illo? Nobis! <span class="texto-power"> energy </span> </p>
+			</div>
+			
+		</section>
+		<section class="section productos">
+			<article class="slide">
+				<div class="informacion-producto">
+					<p class="modelo">
+						<span class="texto-naranja">Naiky</span>
+						<span class="texto-negro">Fly</span>
+						<p class="descripcion texto-negro">Lorem, ipsum dolor.</p>
+						<p class="precio">380,99</p>
+					</p>
+				</div>
+			</article>
+			<article class="slide">
+				<div class="informacion-producto">
+					<p class="modelo">
+						<span class="texto-naranja">Boomerang</span>
+						<span class="texto-negro">S10</span>
+						<p class="descripcion texto-negro">Lorem, ipsum dolor.</p>
+						<p class="precio">300,99</p>
+					</p>
+				</div>
+			</article>
+			<article class="slide">
+				<div class="informacion-producto">
+					<p class="modelo">
+						<span class="texto-naranja">Patriot</span>
+						<span class="texto-negro">Power</span>
+						<p class="descripcion texto-negro">Lorem, ipsum dolor.</p>
+						<p class="precio">400,99</p>
+					</p>
+				</div>
+			</article>
+		</section>
+		<footer class="section footer">
+			<h2 class="texto-blanco"> Hecho por Brian Sotalin <i class="fas fa-dragon"></i><br>
+				<span class="texto-crimson">Sigueme:</span></h2>
+			<p class="redes-sociales">
+				<a href="https://github.com/BrianSotalin" class="github">
+					<i class="fab fa-github"></i>
+				</a>
+				<a href="https://www.instagram.com/blady.10p/?hl=es" class="instagram">
+					<i class="fab fa-instagram"></i>
+				</a>
+				
+			</p>
+			<h3 class="texto-crimson">
+			Contactame
+			</h3>
+			<p class="redes-sociales">
+				<a href="https://briansotalin.github.io/formulario/" class="email">
+					<i class="fas fa-envelope-square"></i>
+				</a>
+				
+				
+			</p>
+			
+		</footer>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

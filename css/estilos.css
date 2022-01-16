@@ -1,0 +1,463 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+
+.texto-crimson {
+    font-weight: 300;
+    color: crimson;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+
+.texto-secondary {
+    font-weight: 700;
+    color: darkcyan;
+}
+
+.texto-thrid {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+.texto-power {
+    font-size: 30px;
+    font-weight: 700;
+    color: crimson;
+}
+
+.texto-negro {
+    color: #000;
+}
+
+/* *------------
+MENU DE NAVEGACION
+------------* */
+
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: #c2c2c2;
+    transition: .5s ease;
+}
+
+.nav .marca {
+    font-size: 50px;
+}
+
+.nav li.active {
+    border-bottom: 2px solid crimson;
+}
+
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a,
+.menu li:hover a {
+    color: crimson;
+}
+
+/* 
+CLASES FULL PAGE
+*/
+#fp-nav ul li a span {
+    background: crimson;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: silver;
+}
+
+/* 
+HEADER
+*/
+.header {
+    background: url(../media/bg-imagen.jpeg);
+    background-position: center;
+}
+
+.header .contenedor-titulo {
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+
+.header .titulo {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.header .contenedor-icono {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: arriba-abajo 1s ease infinite;
+}
+
+/* 
+VIDEO
+*/
+.bg-video {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background: black;
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+}
+
+/* 
+ANIMACIONES
+*/
+@keyframes arriba-abajo {
+    0% {
+        transform: translateY(20px);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+/* 
+ABOUT
+*/
+.about{
+    background-image: url(../media/bg-imagen.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.about .contenedor-titulo {
+    text-align: center;
+    position: relative;
+    margin: 0 40px;
+    z-index: 99;
+}
+
+.about .titulo {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.about .texto-power{
+    transition: 1s ease all;
+}
+/* 
+PRODUCTOS
+*/
+.productos article {
+    background-position: center;
+    background-size: cover;
+}
+
+.productos article:nth-child(1) {
+    background-image: url(../media/producto-01.jpg);
+}
+
+.productos article:nth-child(2) {
+    background-image: url(../media/producto-02.jpg);
+}
+
+.productos article:nth-child(3) {
+    background-image: url(../media/producto-03.jpg);
+}
+
+.productos .informacion-producto {
+    margin: 0 10px;
+
+}
+
+.productos .modelo {
+    font-size: 45px;
+}
+
+.productos .descripcion {
+    font-size: 25px;
+}
+
+.productos .precio {
+    font-size: 20px;
+    color: cyan;
+}
+
+.productos .precio::before {
+    content: "$";
+    display: inline-block;
+}
+
+/* 
+CLASES FULLPAGE SLIDE (FLECHAS)
+*/
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 90%;
+    border-color: transparent crimson transparent crimson;
+}
+
+.fp-controlArrow.fp-next:hover,
+.fp-controlArrow.fp-prev:hover {
+    top: 90%;
+    border-color: transparent palevioletred transparent palevioletred;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 80%;
+}
+
+/* 
+FOOTER
+*/
+.footer{
+    background: black;
+}
+.footer .texto-naranja {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.footer h2 {
+    opacity: 0;
+    font-family: 'Oswald', sans-serif;
+    transition: 1s ease all;
+}
+
+.footer h3 {
+    opacity: 1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    transition: 1s ease all;
+}
+
+.footer h2 i:hover {
+    color: crimson;
+}
+
+.footer .redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 40px;
+}
+
+.footer .redes-sociales a {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: white;
+    color: orange;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 30px;
+
+}
+
+.footer .github i {
+    color: black;
+}
+
+.footer .instagram i {
+    color: #c13584;
+}
+
+.footer .email i {
+    color: dodgerblue;
+}
+
+.footer .github:hover {
+    background: rgb(31, 30, 30);
+}
+
+.footer .instagram:hover {
+    background: #c13584;
+}
+
+.footer .email:hover {
+    background: dodgerblue;
+}
+
+.footer .github i:hover {
+    color: white;
+}
+
+.footer .instagram i:hover {
+    color: white;
+}
+
+.footer .email i:hover {
+    color: white;
+}
+
+/* 
+RESPONSIVE
+*/
+@media screen and (max-width:1090px) {
+    .productos .informacion-producto {
+        position: absolute;
+        top: 55%;
+
+    }
+}
+
+@media screen and (max-width:930px) {
+    .productos .informacion-producto {
+        position: absolute;
+        top: 60%;
+
+    }
+}
+
+@media screen and (max-width:770px) {
+    .productos .informacion-producto {
+        position: absolute;
+        top: 70%;
+
+    }
+    .about .titulo{
+        font-size: 40px;
+    }
+    .about p{
+        font-size: 24px;
+        
+    }
+}
+
+@media screen and (max-width:550px) {
+    .header .titulo {
+        font-size: 50px;
+    }
+
+    .texto-thrid {
+        font-size: 20px;
+    }
+    .nav .marca{
+        font-size: 40px;
+    }
+    .nav a{
+        font-size: 16px;
+    }
+
+    .fp-controlArrow.fp-next,
+    .fp-controlArrow.fp-prev {
+        top: 95%;
+
+    }
+
+    .fp-controlArrow.fp-next:hover,
+    .fp-controlArrow.fp-prev:hover {
+        top: 95%;
+        border-color: transparent palevioletred transparent palevioletred;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 25px;
+        border-width: 20px 20px 20px 0;
+        border-color: transparent crimson transparent transparent;
+    }
+
+    .fp-controlArrow.fp-next {
+        left: 100px;
+        border-width: 20px 0 20px 20px;
+        border-color: transparent transparent transparent crimson;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .nav .marca {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:445px) {
+   .nav{
+       display: block;
+       text-align: center;
+   }
+   .menu{
+       display: flex;
+       justify-content: space-between;
+   }
+   .header .titulo {
+    font-size: 35px;
+}
+
+.texto-thrid {
+    font-size: 14px;
+}.texto-power{
+    font-size: 22px;
+}
+.footer h2{
+    font-size: 20px;
+}
+.footer h3{
+    font-size: 20px;
+}
+}
+
+.about .titulo{
+    font-size: 35px;
+}
+.about p{
+    font-size: 18px;
+  
+}
