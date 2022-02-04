@@ -278,6 +278,16 @@ FOOTER
     opacity: 0;
     font-family: 'Oswald', sans-serif;
     transition: 1s ease all;
+
+}
+.footer h2 a{
+    color: thistle;
+    text-decoration: none;
+    transition: .3s ease all;
+}
+.footer h2 a:hover{
+    color: crimson;
+    letter-spacing: 5px;
 }
 
 .footer h3 {
